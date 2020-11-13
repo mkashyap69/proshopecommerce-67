@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import colors from 'colors';
 import path from 'path';
-import dotenv from 'dotenv';
+/* import dotenv from 'dotenv'; */
 import { connectDB } from './config/db.js';
 import morgan from 'morgan';
 
@@ -12,8 +12,8 @@ import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 
-dotenv.config();
-
+/* dotenv.config();
+ */
 connectDB();
 
 const app = express();
